@@ -21,9 +21,12 @@ app.use(cookieParser());
 app.use(express.json());
 
 //  CORS Configuration
+const rawOrigin = process.env.CLIENT_URL || "http://localhost:5173";
+const cleanOrigin = rawOrigin.replace(/\/$/, ""); // strips trailing slash
+
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin: cleanOrigin,
     credentials: true,
   })
 );
