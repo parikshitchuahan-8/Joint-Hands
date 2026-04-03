@@ -197,7 +197,7 @@ const ProfileSettings = () => {
 
             <CardContent>
               <Tabs defaultValue="personal" className="w-full">
-                <TabsList className="grid w-full grid-cols-4 text-base">
+                <TabsList className="grid w-full grid-cols-2 md:grid-cols-4 text-base h-auto gap-1 p-1">
                   <TabsTrigger value="personal">Personal</TabsTrigger>
                   <TabsTrigger value="education">Education</TabsTrigger>
                   <TabsTrigger value="skills">Skills</TabsTrigger>

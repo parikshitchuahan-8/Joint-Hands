@@ -271,7 +271,7 @@ export const GestureDetector = ({ onGesture }) => {
   if (!isEnabled) return null;
 
   return (
-    <Card className="fixed bottom-20 right-6 p-4 bg-card/95 backdrop-blur-sm shadow-xl z-50 w-80 border-2 border-primary/20">
+    <Card className="fixed bottom-20 right-4 sm:right-6 p-4 bg-card/95 backdrop-blur-sm shadow-xl z-50 w-[calc(100vw-2rem)] sm:w-80 border-2 border-primary/20">
       <div className="flex justify-between items-center mb-3">
         <Badge className="bg-success/90 text-success-foreground">
           <Camera className="h-3 w-3 mr-1" /> Active
